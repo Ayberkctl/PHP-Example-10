@@ -1,0 +1,12 @@
+CREATE DATABASE phptest1;
+use phptest1
+CREATE TABLE  test(
+    id int(11) not null auto_increment,
+    baslik VARCHAR(255),
+    icerik TEXT,
+    onay int ,
+    tarih TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    primary key(id)
+);
+ALTER DATABASE phptest1 CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+ALTER TABLE test CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
