@@ -14,6 +14,14 @@ switch ($_GET['sayfa']) {
         require_once "insert.php";
     break;
     
+    case 'read':
+        require_once "read.php";
+    break;
+    
+    case 'güncele':
+        require_once "güncele.php";
+    break;
+    
     
 }
 

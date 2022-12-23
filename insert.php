@@ -1,3 +1,4 @@
+<?php require_once "header.php";?>
 <?php
 // INSERT INTO table_name SET kol1=deger1;
 
@@ -53,8 +54,8 @@ else{
     <textarea name="icerik" cols="30" rows="10" value="<?php echo $_POST["icerik"] ?? "" ; ?>"></textarea> <br> <br>
     Onay:  
     <select name="onay" > 
-        <option value="0">Onaylı</option>
-        <option value="1">Onaylı değil</option>
+        <option value="1">Onaylı</option>
+        <option value="0">Onaylı değil</option>
     </select> <br> <br>
     <input type="hidden" name="submit" value="1">
     <button type="submit">Gönder</button>
